@@ -1,5 +1,4 @@
-
-    'use strict';
+$(document).ready(function() {
 
     function timeConvert(n) {
 var num = n;
@@ -24,3 +23,4 @@ return /*num + " minutes = " +*/ rhours + " hour(s) and " + rminutes + " minute(
     $('<tr><td>Distance</td><td>'+distance.toFixed(1)+'</td></tr><tr><td>Noble</td><td>'+timeConvert(distance.toFixed(1) * 35) +'</td></tr><tr><td>Scout</td><td>'+timeConvert(distance.toFixed(1) * 9) +'</td></tr>').appendTo('#content_value > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody')
     //$('#content_value > table > tbody > tr > td:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(6)').html('<td>Noble</td><td>'+distance.toFixed(1) * 35 +'</td>')
 
+});
